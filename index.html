@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
-  </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Donut Clicker</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <button class="collapse">Fred the Baker Baking Company</button>
+        <div class="content">
+          <p>Established in 2022</p>
+        </div>
+      </div>
+      <div>
+        <button class="collapse">Inspiration: Cookie Clicker</button>
+        <div class="content">
+          <p>Cookie Cookie Cutter Cutter</p>
+        </div>
+      </div>
+      <div>
+        <button class="collapse">Developer</button>
+        <div class="content">
+          <p>Yonas Tadesse</p>
+        </div>
+      </div>
+      <script src="src/js/header.js"></script>
+<!-- 
+      <nav>
+        <div><a href="#">Fred the Baker Baking Company</a></div>
+        <div><a href="https://orteil.dashnet.org/cookieclicker/">Inspiration: Cookie Clicker</a></div>
+        <div><a href="https://www.linkedin.com/in/ytadesse1/">Contact</a></div>
+      </nav> -->
+
+      <h1>Donut Maker</h1>
+    </header>
+
+    <main>
+      <section class="donutMaker">
+        <img src="src/images/donutImage.webp" name="donutButton" alt="jsButton" id="donutButton">
+        <h2><span id="donutCountDisplay">0</span> Donuts</h2>
+      </section>
+      <div class="upgrades">
+        <section id="autoClicker">
+          <button id="autoClickerBtn">Buy Auto Clickers</button>
+
+          <h3>Auto Clicker Price: <span id="autoPrice">100</span>
+          </h3>
+
+          <h3 class="price">Total Purchased:</h3>
+          <h2><span id="autoClickerTotal">0</span></h2>
+        </section>
+
+        <section id="clickMultiplier">
+          <button id="multiplierBtn">Multiply Donuts</button>
+          <h3>Multiplier Cost: <span id="clickMultiplierCost">10</span></h3>
+
+          <h3 class="price">Total Purchased:</h3>
+          <h2><span id="multiplierTotal"></span></h2>
+        </section>
+      </div>
+
+      <section class="reset">
+        <button id="reset-button">RESET</button>
+      </section>
+    </main>
+  </div>
+  <script src="/src/js/app.js" type="module"></script>
+  <!-- <script src="/src/js/DonutMaker.js"></script> -->
+</body>
+
 </html>
