@@ -64,7 +64,7 @@ class DonutMaker {
 
   activateAutoClickers() {
     for (let i = 0; i < this.autoClickerCount; i++) {
-      this.clickDonut();
+      this.addDonut();
     }
   }
 
@@ -77,13 +77,13 @@ class DonutMaker {
   }
   
   purchaseMultiplier() {
-    this.donutMultiplierCount += 1;
+    this.MultiplierCount += 1;
     this.subtractMultiplierCostFromDonutCount();
     this.increaseMultiplierCost();
   }
 
   notEnoughForMultiplier() {
-    return this.donutCount < this.donutMultiplierCost;
+    return this.donutCount < this.MultiplierCost;
   }
 
   checkDonutCountToBuyMultiplier() {
