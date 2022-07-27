@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(154, 184, 211);
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+.collapse {
+    background-color: rgb(196, 196, 196);
+    color: rgb(0, 0, 0);
+    padding: 2px;
+    width: 100%;
+    border: none;
+    margin: .5rem;
+    text-align: center;
+    outline: none;
+    font-size: 10px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.active,
+.collapse:hover {
+background-color: rgb(184, 184, 184);
+}
+
+.content {
+    padding-left: 18px;
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: max-height 0.5s ease-out;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#donutButton {
+    display: flex;
+    width: 20%;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+}
+
+#donutButton:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+#donutButton:active {
+    transform: scale(1.05);
+}
+
+.donutMaker {
+    text-align: center;
+    font-size: 20pt;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.upgrades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#reset-button {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+}
+
+.logosDiv {
+    justify-content: center;
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    margin-bottom: px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    margin-top: -20px;
+}
